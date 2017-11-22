@@ -16,7 +16,21 @@ public class SquareTest {
     @Test
     public void testSquareRomb() {
 
-        int res = a.squareRomb(6, 30.0);
+        float res = a.squareRomb(6, 30);
         Assert.assertTrue(res == 18);
+    }
+    
+    @Test
+    public void testExist() {
+
+        float res = a.squareRomb(6, 30);
+        Assert.assertNotNull(a);
+    }
+    
+    @Test
+    public void testMinus() {
+
+        float res = a.squareRomb(-4, 30);
+        Assert.assertFalse(res != 0);
     }
 }
