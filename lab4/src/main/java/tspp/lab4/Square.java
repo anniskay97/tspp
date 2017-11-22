@@ -3,16 +3,16 @@ package tspp.lab4;
 
 public class Square
 {
-	public int squareRomb(int side, double degrees)
+	public float squareRomb(int d, int e)
     {
-        double radians =  Math.toRadians(degrees);
-        return  (int) Math.round(side*side*Math.sin(radians));
+        double radians =  Math.toRadians(e);
+        return (float)(d*d*Math.sin(radians));
        
     }
     
      public static void main(String[] args) {
         Square a = new Square();
-        int res  = a.squareRomb(6, 30.0);
+        float res  = a.squareRomb(3, 30);
          System.out.println(res);
     }
 }
